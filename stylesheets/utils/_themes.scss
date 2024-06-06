@@ -1,0 +1,45 @@
+// Define mixins for each theme
+@mixin news-theme {
+  --theme-color: #{$color-black};
+  --font-family: Arial, sans-serif;
+  --heading-font: Times, serif;
+  --bg-image: url("../../static/images/art.jpg");
+}
+
+@mixin sport-theme {
+  --theme-color: #{$color-red};
+  --font-family: Arial, sans-serif;
+  --heading-font: Helvetica, sans-serif;
+  --bg-image: url("../../static/images/sport.jpg");
+}
+
+@mixin culture-theme {
+  --theme-color: #{$color-green};
+  --font-family: Arial, sans-serif;
+  --heading-font: Georgia, serif;
+  --bg-image: url("../../static/images/culture.jpg");
+}
+
+@mixin politics-theme {
+  --theme-color: #{$color-blue};
+  --font-family: Georgia, serif;
+  --heading-font: Times, serif;
+  --bg-image: url("../../static/images/politics.jpg");
+}
+
+// Applying mixins to the corresponding classes
+.theme-news {
+  @include news-theme;
+}
+
+.theme-sport {
+  @include sport-theme;
+}
+
+.theme-culture {
+  @include culture-theme;
+}
+
+.theme-politics {
+  @include politics-theme;
+}

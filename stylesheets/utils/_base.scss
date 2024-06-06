@@ -1,0 +1,91 @@
+/* Global styles */
+
+body {
+  background-color: #eeeeee;
+  margin: 0;
+  font-family: $nav-font;
+}
+
+#sectionWrapper {
+  width: 34vw;
+  height: calc(34vw / 0.673);
+  margin: 2% auto;
+
+  box-shadow: rgba(50, 50, 73, 0.4) 0px 15px 30px -10px,
+    rgba(0, 0, 0, 0.4) 0px 15px 30px -15px;
+
+  padding: $spacing-large;
+}
+
+// Nav bar
+header {
+  box-shadow: rgba(50, 50, 73, 0.4) 0px 10px 10px -10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: fit-content;
+  gap: 1rem;
+  text-transform: uppercase;
+
+  button {
+    all: unset;
+    cursor: pointer;
+
+    &.active {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Section header
+#sectionHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#folio {
+  text-align: end;
+  font-size: $font-medium;
+  font-family: $nav-font;
+}
+
+#sectionTitle {
+  font-family: $nav-font;
+  font-size: $font-large;
+  background-color: var(--theme-color);
+  color: $color-white;
+  text-transform: capitalize;
+  width: fit-content;
+  padding: $spacing-small $spacing-large;
+}
+
+//Article main
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat($column-count, 1fr);
+  column-gap: $spacing-medium;
+  row-gap: $spacing-small;
+  border-top: $spacing-tiny solid var(--theme-color);
+  padding-top: $spacing-small;
+}
+
+.article-text-wrapper {
+  grid-column: 1 / -1;
+  grid-row: 12 / -1;
+
+  column-count: $column-count;
+  gap: $spacing-medium;
+}
+
+.active {
+  text-decoration: underline;
+}

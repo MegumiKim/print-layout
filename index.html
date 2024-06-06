@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Application</title>
+    <link rel="stylesheet" href="./stylesheets/output.css" />
+  </head>
+  <body>
+    <!-- Create the navbar. This should include buttons for each section (news, sport, culture, politics) -->
+    <header>
+      <nav>
+        <!-- <button class="active">News</button>
+        <button>Sport</button>
+        <button>Culture</button>
+        <button>Politics</button> -->
+      </nav>
+    </header>
+
+    <!-- Create the folio. This should include the current date, and the name of your newspaper -->
+    <div id="sectionWrapper" class="theme-news">
+      <div id="sectionHead">
+        <div id="sectionTitle">News</div>
+        <div id="folio"></div>
+      </div>
+      <div class="main">
+        <div id="image"></div>
+        <div id="headline"></div>
+
+        <div id="intro"></div>
+        <div class="article-text-wrapper">
+          <div id="text-column"></div>
+          <div id="quote"></div>
+          <div id="byline"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/navbar.js"></script>
+    <script type="module" src="./src/folio.js"></script>
+    <script type="module" src="./src/loadComponents.js"></script>
+  </body>
+</html>

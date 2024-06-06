@@ -1,0 +1,8 @@
+#intro {
+  font-size: $font-medium;
+  font-family: var(--font-family);
+  margin-top: $spacing-small;
+
+  grid-column: 1 / span 3;
+  grid-row: 11;
+}

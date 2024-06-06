@@ -1,0 +1,34 @@
+/* Variables */
+
+// font
+@font-face {
+  font-family: "National";
+  src: url("../../static/fonts/National/nationalRegular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$nav-font: "National", sans-serif;
+
+// Font sizes
+$font-xl: 1.8vw;
+$font-large: 1vw;
+$font-medium: 0.8vw;
+$font-small: 0.6vw;
+$font-tiny: 0.5vw;
+
+// Colors
+$color-black: #000;
+$color-white: #fff;
+$color-blue: #127b9c;
+$color-red: #dc1919;
+$color-green: #1c6636;
+
+// Spacing
+$spacing-tiny: 0.2vw;
+$spacing-small: 0.5vw;
+$spacing-medium: 0.7vw;
+$spacing-large: 1vw;
+
+// Column count
+$column-count: 4;

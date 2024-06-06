@@ -1,0 +1,22 @@
+{
+  "name": "interview-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "watch-css": "echo 'Starting SASS...' && sass --watch ./components/ stylesheets/main.scss:stylesheets/output.css --no-source-map",
+    "dev": "npm-run-all --parallel start watch-css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.75.0"
+  }
+}

@@ -1,0 +1,10 @@
+#headline {
+  font-size: $font-xl;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: $spacing-large;
+  font-family: var(--heading-font);
+
+  grid-column: 1 / -1;
+  grid-row: 10;
+}
